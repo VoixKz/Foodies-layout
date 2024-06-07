@@ -20,9 +20,28 @@ $accent-color: #06C167;
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #c0c9cf;
     font-family: 'Inter', sans-serif;
+    @include flex-x($jc: start, $ai: center);
+    flex-direction: column;
+}
+
+article {
+    background-color: #FFFFFF;
     width: 1440px;
+}
+
+.href-active:hover{
+    transition: 0.5s;
+    color: $accent-color;
+    transform: scale(1.2);
+    display: block;
+}
+
+.button-active:hover{
+    transition: 0.5s;
+    background-color: $accent-color;
+    color: #fff;
 }
 
 header {
@@ -151,15 +170,112 @@ main {
     margin-bottom: 20.61px;
 }
 
-.href-active:hover{
-    transition: 0.5s;
-    color: $accent-color;
-    transform: scale(1.2);
-    display: block;
+.stars {
+    width: 1170px;
+    @include flex-x();
+    margin-bottom: 190px;
 }
 
-.button-active:hover{
-    transition: 0.5s;
-    background-color: $accent-color;
-    color: #fff;
+.stars__left {
+    width: 570px;
+    margin-top: 78px;
+}
+
+.stars__left__subtitle {
+    @extend %subtitle-text;
+}
+
+.stars__left__title {
+    @extend %title-text;
+    margin: 20px 0 55px;
+}
+
+.stars__left__achievments {
+    @include flex-x();
+    width: 502px;
+}
+
+.achievment {
+    .achievment__number {
+        font-weight: 600;
+        font-size: 40px;
+        color: $accent-color;
+        line-height: 48.41px;
+        margin-bottom: 16px;
+    }
+    .achievment__text {
+        opacity: 0.65;
+        font-weight: 400;
+        font-size: 15px;
+        color: #1d1d1f;
+        line-height: 18.15px;
+    }
+}
+
+.stars__button {
+    margin-top: 51px;
+    font-weight: 400;
+    font-size: 16px;
+    width: 233px;
+    height: 79px;
+    line-height: 19.36px;
+}
+
+.advantages {
+    width: 1170px;
+    @include flex-x($jc: start, $ai: center);
+    flex-direction: column;
+    margin-bottom: 199px;
+}
+
+.advantages__subtitle {
+    @extend %subtitle-text;
+}
+
+.advantages__title {
+    @extend %title-text;
+    margin: 20px 0 70px;
+}
+
+.advantages__table {
+    @include flex-x();
+    flex-wrap: wrap;
+    gap: 0;
+    img {
+        width: 292.5px;
+        height: 292.5px;
+    }
+}
+
+.advantages__table__advantage {
+    padding: 37px 0 0 37.5px;
+    width: 292.5px;
+    height: 292.5px;
+    border: 1.50px solid $accent-color;
+    box-sizing: border-box;
+    background-color: #f3fcf7;
+    .title {
+        font-weight: 500;
+        font-size: 32px;
+        color: #1d1d1f;
+        line-height: 38.73px;
+    }
+    .subtitle {
+        margin: 25px 0 38px;
+        width: 210px;
+        line-height: 19.36px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #1d1d1f;
+    }
+}
+
+.advantages__button {
+    width: 148px;
+    height: 42px;
+    background-color: #e6f9f0;
+    font-weight: 500;
+    font-size: 15px;
+    color: $accent-color;
+    line-height: 18.15px;
 }
