@@ -1,16 +1,30 @@
 @import url(../reset.css);
-.advantages__title, .stars__left__title, .benefits__right__title {
+.product__title, .advantages__title, .stars__left__title, .benefits__right__title {
   font-weight: 500;
   font-size: 60px;
   color: #1d1d1f;
   line-height: 72.61px;
 }
 
-.advantages__subtitle, .stars__left__subtitle, .benefits__right__subtitle {
+.product__subtitle, .advantages__subtitle, .stars__left__subtitle, .benefits__right__subtitle {
   font-weight: 500;
   font-size: 15px;
   color: #1d1d1f;
   line-height: 18.15px;
+}
+
+.footer__top2__title, .footer__top3__title, .footer__top4__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #1d1d1f;
+  line-height: 29.05px;
+}
+
+.footer__bottom, .footer__top4__subtitle, .footer__top3 ul, .footer__top2 ul, .footer__top1__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1d1d1f;
+  line-height: 19.36px;
 }
 
 body {
@@ -279,4 +293,206 @@ main {
   font-size: 15px;
   color: #06C167;
   line-height: 18.15px;
+}
+
+.product {
+  width: 1170px;
+  margin-bottom: 193px;
+}
+
+.product__title {
+  margin: 20px 0 63px;
+}
+
+.product__foods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__foods__product {
+  width: 270px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 40px 30px;
+  border: 2px solid rgba(118, 118, 117, 0.2509803922);
+}
+.product__foods__product .title {
+  font-weight: 400;
+  color: #1d1d1f;
+  font-size: 20px;
+  line-height: 24.2px;
+  margin: 41px 0 25px;
+}
+.product__foods__product .price {
+  font-weight: 400;
+  font-size: 20px;
+  color: #06C167;
+  line-height: 24.2px;
+  margin-bottom: 29px;
+}
+.product__foods__product button {
+  width: 177px;
+  height: 57px;
+  line-height: 19.36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 25.43px 20px 30px;
+  transition: 0.5s;
+}
+.product__foods__product button span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #06C167;
+}
+
+.product__foods__product:hover {
+  border-color: #06C167;
+}
+
+.button-transform:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: #06C167;
+}
+.button-transform:hover span {
+  color: white;
+}
+.button-transform:hover .button__img-change {
+  content: url(../../img/arrow-white.svg);
+}
+
+.ingredients {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 1170px;
+  flex-direction: column;
+  background-image: url(../../img/Ingredients.svg);
+  height: 459px;
+  margin-bottom: 108px;
+}
+
+.ingredients__title {
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  line-height: 72.61px;
+  width: 799px;
+  margin: 110px 0 37px;
+}
+
+.ingredients__button {
+  width: 210px;
+  height: 79px;
+  line-height: 19.36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 35.02px 31px 40px;
+  transition: 0.5s;
+}
+.ingredients__button span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #06C167;
+}
+
+footer {
+  margin-left: 106px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 1170px;
+}
+
+.footer__top1 {
+  width: 284px;
+}
+
+.footer__top1__subtitle {
+  margin: 41px 0 51.6px;
+}
+
+.contacts {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__top2 {
+  width: 107px;
+  margin: 10px 91px 0 150px;
+}
+.footer__top2 ul li {
+  margin-bottom: 16px;
+}
+.footer__top2 ul li a {
+  color: #1d1d1f;
+}
+
+.footer__top2__title, .footer__top3__title, .footer__top4__title {
+  margin-bottom: 41px;
+}
+
+.footer__top3 {
+  width: 110px;
+  margin: 10px 90px 0 0;
+}
+.footer__top3 ul li {
+  margin-bottom: 16px;
+}
+.footer__top3 ul li a {
+  color: #1d1d1f;
+}
+
+.footer__top4 {
+  width: 338px;
+}
+
+.footer__top4__subtitle {
+  margin-bottom: 37px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form input {
+  padding-left: 24px;
+  height: 50px;
+  width: 205px;
+  line-height: 16.94px;
+  background-color: #f0f1ec;
+  outline: none;
+}
+form input ::-webkit-input-placeholder {
+  opacity: 0.51;
+  color: #1d1d1f;
+}
+form button {
+  height: 50px;
+  width: 118px;
+}
+form button span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #1d1d1f;
+  line-height: 16.94px;
+}
+
+.footer__bottom {
+  margin: 91.02px 0 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
